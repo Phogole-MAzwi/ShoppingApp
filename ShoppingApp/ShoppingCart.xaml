@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ShoppingApp.ShoppingCart">
+
+    <StackLayout Padding="20">
+        <Label Text="Shopping Cart"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <ListView x:Name="CartItemsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Name}" />
+                            <Label Text="{Binding Quantity}" />
+                            <Button Text="Remove" Clicked="OnRemoveFromCartClicked" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

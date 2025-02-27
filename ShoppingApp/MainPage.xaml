@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ShoppingApp.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Shopping App"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Button Text="Go to Profile"
+                Clicked="OnGoToProfileClicked"/>
+
+        <Button Text="Go to Shopping List"
+                Clicked="OnGoToShoppingListClicked"/>
+    </StackLayout>
+</ContentPage>
